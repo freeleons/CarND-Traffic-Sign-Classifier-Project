@@ -41998,7 +41998,6 @@ a = np.array([[ 0.24879643,  0.07032244,  0.12641572,  0.34763842,  0.07893497,
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For question "Which predictions is the model certain of? Uncertain?" You can read it from the bar plot above to know which prediction is the model certain of and which prediction is uncertain.</p>
 <table>
 <thead><tr>
 <th style="text-align:left">Signsfrom the Internet</th>
@@ -42019,7 +42018,11 @@ a = np.array([[ 0.24879643,  0.07032244,  0.12641572,  0.34763842,  0.07893497,
 </tr>
 </tbody>
 </table>
-<p>For the question "Which predictions is the model certain of? Uncertain?" If the answer above does not answer this question, could you please explain more what should I say might answer that questions? I felt I do not really understand the question "Which predictions is the model certain of? Uncertain?" Could you explain more?</p>
+<p>For the first sign, No Entry, we can see the first plot, it nearly 95% certainty on label 17, which is No Entry. And there are about 5% certainty of the label 14, which is Stop.</p>
+<p>For the second sign, No Truck, there is no way the classifier can classify it correct, although, there is nearly 100% certain to classify it to label 7, which is speed limit.</p>
+<p>For the third sign, Stop, there are nearly 100% centainty to classify it to label 14, which is stop.</p>
+<p>For the fourth sign, Speed Limit 40, there is no way the classifier can classify it correct, too. Because there is no Speed Limit 40 in the Germany Traffic Sign Set. It is about 81% certain of the sign is 36, which is Go straight or right. About 19% centain is 12, which is Priority road.</p>
+<p>For the fifth sign, General Caution, there is nearly 100% certain that the sign is 18, which is General Caution.</p>
 <blockquote><p><strong>Note</strong>: Once you have completed all of the code implementations and successfully answered each question above, you may finalize your work by exporting the iPython Notebook as an HTML document. You can do this by using the menu above and navigating to  \n",
     "<strong>File -&gt; Download as -&gt; HTML (.html)</strong>. Include the finished document along with this notebook as your submission.</p>
 </blockquote>
